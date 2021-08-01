@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="uft-8">
+    <meta name="viewport" content="device-width, initial-scale=1">
+    <meta name="author" content="Aleksandra Wójcik">
+    <meta name="description" content="Usługi chemiczne">
+    <meta name="keywords" content="Mokrosz">
+    <title>Mokrosz.pl</title>
+</head>
+<body>
+    <link rel="stylesheet" href="css.css" type="text/css">
+    <link rel="stylesheet" href="fontello-d240be6a/css/fontello.css" type="text/css">
+    <link href='http://fonts.googleapis.com/css?family=Alegreya+Sans+SC&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Alegreya+Sans&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    <div class="menu">
+        <div class="logo"></div>
+        <ul>
+            <li>STRONA GŁÓWNA</li>
+            <li><span style="color: rgb(224, 34, 34);">O SPÓŁCE <i class="icon-down-open"></i></span></li>
+            <li>TECHNOLOGIE <i class="icon-down-open"></i>
+                <ol>
+                    <li>przykład</li>
+                    <li>przykład</li>
+                    <li>przykład</li>
+                </ol> 
+            </li>
+            <li>PRODUKTY <i class="icon-down-open"></i> <ol>
+                <li>przykład</li>
+                <li>przykład</li>
+                <li>przykład</li>
+            </ol> </li>
+            <li>USŁUGI <i class="icon-down-open"></i> <ol>
+                <li>przykład</li>
+                <li>przykład</li>
+                <li>przykład</li>
+            </ol> </li>
+            <li>KONTAKT</li>
+        </ul>
+    </div>
+    <div class="slider"></div>
+    <div class="main_tło">
+        <div class="pojemnik">
+            <div class="onas"><h1>O nas</h1></div>
+            <div class="linia"></div>
+            <div class="opis"><b>Mokrosz Sp. z o.o. świadczy usługi projektowe, badawcze i doradcze w zakresie procesów z dziedziny energetyki, chemii, ochrony środowiska oraz przemysłów pokrewnych. Nasza działalność obejmuje również analizy chemiczne oraz doradztwo w zakresie wyboru oraz eksploatacji instalacji przemysłowych.</b>
+                <br><br><br>Firma oferuje:
+                <ul>
+                    <li>Prowadzenie prac badawczo-rozwojowych w dziedzinie nauk chemicznych, inżynierii procesowej oraz pozostałych nauk przyrodniczych i technicznych.</li>
+                    <li>Prowadzenie prac badawczo-rozwojowych w dziedzinie nauk chemicznych, inżynierii procesowej oraz pozostałych nauk przyrodniczych i technicznych.</li>
+                    <li>Prowadzenie prac badawczo-rozwojowych w dziedzinie nauk chemicznych, inżynierii procesowej oraz pozostałych nauk przyrodniczych i technicznych.</li>
+                    <li>Prowadzenie prac badawczo-rozwojowych w dziedzinie nauk chemicznych, inżynierii procesowej oraz pozostałych nauk przyrodniczych i technicznych.</li>
+                    <li>Prowadzenie prac badawczo-rozwojowych w dziedzinie nauk chemicznych, inżynierii procesowej oraz pozostałych nauk przyrodniczych i technicznych.</li>
+                </ul>
+        </div>
+            <div style="clear: both;"></div>
+        </div>
+    </div>
+    <div class="bottom">All Rights Reserved © Mokrosz.pl</div>
+
+    
+    <script>
+            $(document).ready(function(){
+            var listaTop=$(".menu").offset().top;
+            var stronaTop=function(){
+            var ola=$(window).scrollTop();
+            if (listaTop<ola){
+                $(".menu").addClass("sticky");}
+            else { $(".menu").removeClass("sticky");}
+            }; 
+
+            stronaTop();
+            $(window).scroll(function() {
+            stronaTop();
+            });
+        
+            
+
+        });
+    </script>
+    
+      
+</body>
+</html>
